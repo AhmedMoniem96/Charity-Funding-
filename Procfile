@@ -1,1 +1,1 @@
-web: gunicorn django_project.wsgi
+web: bash -c "python manage.py migrate && gunicorn crowd-funding-web-app.wsgi"
